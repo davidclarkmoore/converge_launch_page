@@ -24,14 +24,14 @@ Parse.initialize("UjgvePXacuR4ahO7jagVvYEjrbWtDTKolP54ks5f", "3aeKGDCOsy0GzZARPN
 
 $("#email_submit").click(function() {
 
-		var VintageEmail = Parse.Object.extend("ConvergeEmail");
-		var vintageEmail = new VintageEmail();
+		var ConvergeEmail = Parse.Object.extend("ConvergeEmail");
+		var convergeEmail = new ConvergeEmail();
 		var emailformval = $("#email_input").val();
 
 
 
-				vintageEmail.set("emailAddress", emailformval);
-				vintageEmail.save(null, {
+				convergeEmail.set("emailAddress", emailformval);
+				convergeEmail.save(null, {
 				  success: function(convergeEmail) {
 				    // Execute any logic that should take place after the object is saved.
 				    alert('Welcome to our list! Stay tuned for updates coming soon! - Converge');
