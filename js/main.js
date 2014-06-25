@@ -17,6 +17,28 @@ $('input').each(function() {
 });
 
 
+var clock;
+
+$(document).ready(function() {
+
+	// Grab the current date
+	var currentDate = new Date();
+
+	// Set date in the future.
+	var futureDate  = new Date("October 13, 2014 08:00:00");
+
+	// Calculate the difference in seconds between the future and current date
+	var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+	// Instantiate a coutdown FlipClock
+	clock = $('.clock').FlipClock(diff, {
+		clockFace: 'DailyCounter',
+		countdown: true
+	});
+});
+
+
+
 
 
 Parse.initialize("UjgvePXacuR4ahO7jagVvYEjrbWtDTKolP54ks5f", "3aeKGDCOsy0GzZARPNM9itls5ocrlmzeP2rr5nJC");
