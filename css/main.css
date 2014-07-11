@@ -206,15 +206,42 @@ text-align: left;
 }
 
 .btn-important {
-    background-color: yellow;
-
+    background-color: rgb(251,241,100);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
 
+.btn-important:hover{
+    background-color: rgb(255,255,0);
+}
+
+.container-fluid {
+    padding-top:6%;
 }
 
 .input-group {
     margin-top: 1em;
+}
+
+.form-control {
+    border-radius: 0;
+    border: 0px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-default {
+    border-color: rgba(243,243,115); 
+}
+
+.btn-default:hover {
+    border-color: rgba(255,255,0); 
 }
 /*
 .input-group {
@@ -238,23 +265,6 @@ text-align: left;
 
 
 }*/
-
-.form-control {
-    border-radius: 0;
-    border: 0px;
-}
-
-.btn {
-    border-radius: 0;
-}
-
-.btn-default {
-    border-color: yellow; 
-}
-
-/* ==========================================================================
-   Footer Styles
-   ========================================================================== */
 
 
 
